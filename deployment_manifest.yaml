@@ -6,6 +6,7 @@ metadata:
   labels:
     app: cal_app
   name: calculator
+  namespace: calculator
 spec:
   replicas: 1
   selector:
@@ -19,7 +20,7 @@ spec:
         app: cal_app
     spec:
       containers:
-      - image: nirajnikam9/calculator:v1
+      - image: moveho/calculator
         name: calculator
         resources: {}
 status: {}
